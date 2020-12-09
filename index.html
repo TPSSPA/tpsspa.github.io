@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myChart"></canvas>
+</body>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    var mixedChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        datasets: [{
+            label: 'A. Risk Assessment and Treatment',
+            backgroundColor: 'rgb(255, 0, 0)',
+            borderColor: 'rgb(255, 0, 0)',
+            data: [25, 45, 30, 40]
+        }, 
+        {
+            label: 'B. Security Policy',
+            backgroundColor: 'rgb(0, 255, 0)',
+            borderColor: 'rgb(0, 255, 0)',
+            data: [40, 55, 25, 15]
+        },
+        {
+            label: 'C. Organizational Security',
+            backgroundColor: 'rgb(0,0,255)',
+            borderColor: 'rgb(0,0,255)',
+            data: [0, 25, 30, 15]
+        },
+        {
+        label: 'D. Asset and Information Management',
+            backgroundColor: 'rgb(255,0,255)',
+            borderColor: 'rgb(255,0,255)',
+            data: [5, 10, 5, 15]
+        },
+        {
+        label: 'E. Human Resource Security',
+            backgroundColor: 'rgb(255,255,0)',
+            borderColor: 'rgb(255,255,0)',
+            data: [25, 10, 10, 50]
+        },
+        {
+        label: 'F. Physical and Environmental Security',
+            backgroundColor: 'rgb(0,255,255)',
+            borderColor: 'rgb(0,255,255)',
+            data: [10, 10, 10, 20]
+        },
+        {
+        label: 'G. IT Operations Management',
+            backgroundColor: 'rgb(132,0,132)',
+            borderColor: 'rgb(132,0,132)',
+            data: [25, 15, 35, 25]
+        },
+        {
+        label: 'H. Access Control',
+            backgroundColor: 'rgb(0,132,132)',
+            borderColor: 'rgb(0,132,132)',
+            data: [10, 10, 10, 20]
+        },
+        {
+        label: 'I. Application Security',
+            backgroundColor: 'rgb(255,132,132)',
+            borderColor: 'rgb(255,132,132)',
+            data: [55, 25, 30, 20]
+        },
+        {
+        label: 'J. Incident Event and Communications Management',
+            backgroundColor: 'rgb(0,0,0)',
+            borderColor: 'rgb(0,0,0)',
+            data: [20, 44, 33, 14]
+        },
+        {
+        label: 'K. Business Resiliency',
+            backgroundColor: 'rgb(255,132,0)',
+            borderColor: 'rgb(255,132,0)',
+            data: [11, 33, 22, 14]
+        },
+        {
+        label: 'L. Compliance',
+            backgroundColor: 'rgb(132,132,255)',
+            borderColor: 'rgb(132,132,255)',
+            data: [11, 33, 22, 14]
+        },
+        {
+            label: 'Assessments Completed',
+            data: [30, 50, 15, 50],
+            type: 'line'
+        }],
+        labels: ['F21Q1', 'F21Q2', 'F21Q3', 'F21Q4']
+    },
+    options: {}
+});
+
+</script>
+</html>
